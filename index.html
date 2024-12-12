@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>Yotube-Podcast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Yotube-Podcast (Audio desde YouTube)</h1>
+    <form id="search-form">
+        <input type="text" id="search-query" placeholder="Busca en YouTube..." required>
+        <button type="submit">Buscar</button>
+    </form>
+
+    <div id="results"></div>
+
+    <!-- Cargamos la API de YouTube IFrame -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>

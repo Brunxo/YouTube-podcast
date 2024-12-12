@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#search-form {
+    margin-bottom: 20px;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.result-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.result-item img {
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.result-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.play-button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Slider (línea de tiempo) */
+.timeline {
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Contenedor del reproductor completamente fuera de pantalla */
+.hidden-player {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: -9999px;
+    top: -9999px;
+    overflow: hidden;
+}
+
+.hidden-player iframe {
+    width: 100px; /* Un tamaño mínimo para que el player funcione */
+    height: 100px;
+    opacity: 0; /* Hacerlo invisible */
+    pointer-events: none;
+}
